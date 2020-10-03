@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/apiman/static/js/main.fd99498d.chunk.js",
+    "main.js.map": "/apiman/static/js/main.fd99498d.chunk.js.map",
+    "runtime-main.js": "/apiman/static/js/runtime-main.d560ec54.js",
+    "runtime-main.js.map": "/apiman/static/js/runtime-main.d560ec54.js.map",
+    "static/js/2.54967c05.chunk.js": "/apiman/static/js/2.54967c05.chunk.js",
+    "static/js/2.54967c05.chunk.js.map": "/apiman/static/js/2.54967c05.chunk.js.map",
+    "index.html": "/apiman/index.html",
+    "precache-manifest.f6410d6054b8cf3a69f602c8285695c8.js": "/apiman/precache-manifest.f6410d6054b8cf3a69f602c8285695c8.js",
+    "service-worker.js": "/apiman/service-worker.js",
+    "static/js/2.54967c05.chunk.js.LICENSE.txt": "/apiman/static/js/2.54967c05.chunk.js.LICENSE.txt",
+    "static/media/apiman.1b07858a.svg": "/apiman/static/media/apiman.1b07858a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d560ec54.js",
+    "static/js/2.54967c05.chunk.js",
+    "static/js/main.fd99498d.chunk.js"
+  ]
+}
