@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/apiman/static/js/main.b3d7f68f.chunk.js",
-    "main.js.map": "/apiman/static/js/main.b3d7f68f.chunk.js.map",
+    "main.js": "/apiman/static/js/main.2704a2f1.chunk.js",
+    "main.js.map": "/apiman/static/js/main.2704a2f1.chunk.js.map",
     "runtime-main.js": "/apiman/static/js/runtime-main.d560ec54.js",
     "runtime-main.js.map": "/apiman/static/js/runtime-main.d560ec54.js.map",
-    "static/js/2.02fb6d27.chunk.js": "/apiman/static/js/2.02fb6d27.chunk.js",
-    "static/js/2.02fb6d27.chunk.js.map": "/apiman/static/js/2.02fb6d27.chunk.js.map",
+    "static/js/2.658514c6.chunk.js": "/apiman/static/js/2.658514c6.chunk.js",
+    "static/js/2.658514c6.chunk.js.map": "/apiman/static/js/2.658514c6.chunk.js.map",
     "index.html": "/apiman/index.html",
-    "precache-manifest.b5444e8015d13beebb5f465bdbc8625b.js": "/apiman/precache-manifest.b5444e8015d13beebb5f465bdbc8625b.js",
+    "precache-manifest.59f4e7b77ce42c2859427eb464fe1421.js": "/apiman/precache-manifest.59f4e7b77ce42c2859427eb464fe1421.js",
     "service-worker.js": "/apiman/service-worker.js",
-    "static/js/2.02fb6d27.chunk.js.LICENSE.txt": "/apiman/static/js/2.02fb6d27.chunk.js.LICENSE.txt",
+    "static/js/2.658514c6.chunk.js.LICENSE.txt": "/apiman/static/js/2.658514c6.chunk.js.LICENSE.txt",
     "static/media/apiman.1b07858a.svg": "/apiman/static/media/apiman.1b07858a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d560ec54.js",
-    "static/js/2.02fb6d27.chunk.js",
-    "static/js/main.b3d7f68f.chunk.js"
+    "static/js/2.658514c6.chunk.js",
+    "static/js/main.2704a2f1.chunk.js"
   ]
 }
