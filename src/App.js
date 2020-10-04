@@ -4,6 +4,7 @@ import { dark, light } from "./theme";
 import { GlobalStyle } from "./global";
 
 import Header from "./components/header/Header";
+import Workspace from "./components/workspace/Workspace";
 
 function App() {
   const [theme, setTheme] = React.useState("light");
@@ -13,6 +14,7 @@ function App() {
     <ThemeProvider theme={theme === "light" ? light : dark}>
       <GlobalStyle />
       <Header onThemeToggle={themeToggle} />
+      <Workspace />
     </ThemeProvider>
   );
 }

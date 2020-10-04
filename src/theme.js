@@ -4,6 +4,8 @@ export const dark = {
   shadow: "#000000",
   border: "#6B8096",
   gradient: "linear-gradient(#091236, #1E215D)",
+  button: "#EE6F57",
+  buttonText: "#FAFAFA",
 };
 
 export const light = {
@@ -12,4 +14,6 @@ export const light = {
   shadow: "#393e46",
   border: "#FFF",
   gradient: "linear-gradient(#39598A, #79D7ED)",
+  button: "#EE6F57",
+  buttonText: "#FAFAFA",
 };

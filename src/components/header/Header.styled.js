@@ -5,7 +5,7 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  height: 7vh;
+  height: 10vh;
   margin: 0.5em auto;
 
   background: ${({ theme }) => theme.background};
