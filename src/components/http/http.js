@@ -4,7 +4,9 @@ const http = (method, url) =>
   axios({
     method,
     url,
-    responseType: "json",
+    headers: {
+      "Content-Type": "application/json",
+    },
   });
 
 export default http;
