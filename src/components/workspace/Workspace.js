@@ -7,7 +7,7 @@ import {
 } from "./Workspace.styled";
 
 import Input from "../input/Input";
-import http from "../http/http";
+import http from "../../service/http";
 
 const Workspace = () => {
   const [httpMethod, setHttpMethod] = useState("GET");
