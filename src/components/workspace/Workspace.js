@@ -30,7 +30,11 @@ const Workspace = () => {
       </InputSection>
       <RequestSection></RequestSection>
       <ResponseSection>
-        {response ? JSON.stringify(response) : "submit to get response"}
+        {response ? (
+          <pre>{JSON.stringify(response, null, 4)}</pre>
+        ) : (
+          "submit to get response"
+        )}
       </ResponseSection>
     </WorkspaceContainer>
   );
