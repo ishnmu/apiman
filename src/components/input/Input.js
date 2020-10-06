@@ -6,15 +6,32 @@ import {
   SubmitSection,
 } from "./Input.styled";
 
-const Input = ({ enpoint, onSubmit, onTyping }) => {
+import Dropdown from "../common/dropdown/Dropdown";
+
+const Input = ({ onSubmit, supportedHttpMethods }) => {
+  const [httpMethod, setHttpMethod] = React.useState("");
+  const [endpoint, setEndpoint] = React.useState("");
+
+  const handleHttpMethodSelect = ({ value }) => {
+    setHttpMethod(value);
+  };
+
   return (
     <InputContainer>
-      <HttpMethodSection>GET</HttpMethodSection>
+      <HttpMethodSection>
+        <Dropdown
+          data={supportedHttpMethods}
+          onSelect={handleHttpMethodSelect}
+          defaultValue={supportedHttpMethods[1]}
+        />
+      </HttpMethodSection>
       <EndpointSection
-        value={enpoint}
-        onChange={(e) => onTyping(e.target.value)}
+        value={endpoint}
+        onChange={(e) => setEndpoint(e.target.value)}
       />
-      <SubmitSection onClick={onSubmit}>SUBMIT</SubmitSection>
+      <SubmitSection onClick={() => onSubmit(httpMethod, endpoint)}>
+        SUBMIT
+      </SubmitSection>
     </InputContainer>
   );
 };

@@ -10,23 +10,33 @@ import Input from "../input/Input";
 import http from "../../service/http";
 
 const Workspace = () => {
-  const [httpMethod, setHttpMethod] = useState("GET");
-  const [endpoint, setEndpoint] = useState("");
   const [response, setResponse] = useState("");
 
-  const onSubmit = () =>
+  const onSubmit = (httpMethod, endpoint) =>
     http(httpMethod, endpoint)
       .then(({ data }) => setResponse(data))
       .catch((e) => setResponse(e));
 
-  const onTyping = (value) => {
-    setEndpoint(value);
-  };
+  const supportedHttpMethods = [
+    {
+      id: 0,
+      displayText: "GET",
+      value: "GET",
+    },
+    {
+      id: 1,
+      displayText: "POST",
+      value: "POST",
+    },
+  ];
 
   return (
     <WorkspaceContainer>
       <InputSection>
-        <Input enpoint={endpoint} onSubmit={onSubmit} onTyping={onTyping} />
+        <Input
+          onSubmit={onSubmit}
+          supportedHttpMethods={supportedHttpMethods}
+        />
       </InputSection>
       <RequestSection></RequestSection>
       <ResponseSection>

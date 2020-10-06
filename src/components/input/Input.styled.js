@@ -9,14 +9,13 @@ export const InputContainer = styled.div`
 `;
 
 export const HttpMethodSection = styled.div`
-  flex: 1;
+  flex: 2;
   height: 100%;
   border-right: 1px solid ${({ theme }) => theme.color};
-
 `;
 
 export const EndpointSection = styled.input`
-  flex: 7;
+  flex: 6;
   background: ${({ theme }) => theme.background};
   color: ${({ theme }) => theme.color};
   outline: none;
