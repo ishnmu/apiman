@@ -14,6 +14,7 @@ export const InputSection = styled.div`
 
 export const RequestSection = styled.div`
   grid-column: 1 / 2;
+  width: 50vw;
   grid-row: 2;
   max-height: 75vh;
 `;
@@ -21,5 +22,6 @@ export const RequestSection = styled.div`
 export const ResponseSection = styled.div`
   grid-column: 2 / 3;
   grid-row: 2;
+  width: 50vw;
   max-height: 75vh;
 `;

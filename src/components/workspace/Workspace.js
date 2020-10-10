@@ -9,6 +9,8 @@ import {
 import Input from "../input/Input";
 import http from "../../service/http";
 
+import Editor from "../common/editor/Editor";
+
 const Workspace = () => {
   const [response, setResponse] = useState("");
 
@@ -38,13 +40,18 @@ const Workspace = () => {
           supportedHttpMethods={supportedHttpMethods}
         />
       </InputSection>
-      <RequestSection></RequestSection>
+      <RequestSection>
+        <Editor />
+      </RequestSection>
       <ResponseSection>
-        {response ? (
-          <pre>{JSON.stringify(response, null, 4)}</pre>
-        ) : (
-          "submit to get response"
-        )}
+        <Editor
+          disabled
+          value={
+            response
+              ? JSON.stringify(response, null, 4)
+              : "submit to get response"
+          }
+        />
       </ResponseSection>
     </WorkspaceContainer>
   );
