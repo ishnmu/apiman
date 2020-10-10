@@ -22,7 +22,7 @@ const Input = ({ onSubmit, supportedHttpMethods }) => {
         <Dropdown
           data={supportedHttpMethods}
           onSelect={handleHttpMethodSelect}
-          defaultValue={supportedHttpMethods[1]}
+          defaultValue={supportedHttpMethods[0]}
         />
       </HttpMethodSection>
       <EndpointSection

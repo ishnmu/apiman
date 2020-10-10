@@ -30,6 +30,26 @@ const Workspace = () => {
       displayText: "POST",
       value: "POST",
     },
+    {
+      id: 2,
+      displayText: "PUT",
+      value: "PUT",
+    },
+    {
+      id: 3,
+      displayText: "DELETE",
+      value: "DELETE",
+    },
+    {
+      id: 4,
+      displayText: "HEAD",
+      value: "HEAD",
+    },
+    {
+      id: 5,
+      displayText: "PATCH",
+      value: "PATCH",
+    },
   ];
 
   return (
