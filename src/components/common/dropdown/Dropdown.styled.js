@@ -13,8 +13,9 @@ export const DropButton = styled.button`
   color: ${({ theme }) => theme.buttonText};
   outline: none;
   border: none;
-
+  
   width: 100%;
+  height: 100%;
 
   hover {
     opacity: 0.1;
@@ -25,6 +26,8 @@ export const DropdownDataList = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  position: relative;
+  z-index: 1;
   background: ${({ theme }) => theme.button};
   color: ${({ theme }) => theme.buttonText};
 
@@ -34,4 +37,13 @@ export const DropdownDataList = styled.div`
   a:hover {
     opacity: 0.5;
   }
+
+  min-height: fit-content;
+  max-height: 50vh;
+  overflow-y: auto;
+`;
+
+export const DropdownElement = styled.div`
+  width: 100%;
+  height: 3rem;
 `;

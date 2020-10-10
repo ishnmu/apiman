@@ -6,6 +6,7 @@ export const HeaderContainer = styled.div`
   align-items: center;
 
   height: 10vh;
+  width: 100vw;
   margin: 0.5em auto;
 
   background: ${({ theme }) => theme.background};

@@ -11,15 +11,20 @@ export const GlobalStyle = createGlobalStyle`
         outline: none;
     }
 
+    html,
+    body,
+    #root {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
     body {
         display: flex;
         flex-direction: column;
 
         font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-
-        height: 100vh;
-        margin: 0;
-        padding: 0;
 
         background: ${({ theme }) => theme.background};
         color: ${({ theme }) => theme.color};

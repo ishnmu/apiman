@@ -3,6 +3,7 @@ import {
   DropdownContainer,
   DropButton,
   DropdownDataList,
+  DropdownElement,
 } from "./Dropdown.styled";
 
 const Dropdown = ({ data, onSelect, defaultValue }) => {
@@ -25,27 +26,31 @@ const Dropdown = ({ data, onSelect, defaultValue }) => {
   }, [defaultValue]);
 
   return (
-    <DropdownContainer>
-      <DropButton onClick={() => setShowData(!showData)}>
-        {selectedValue.displayText}
-      </DropButton>
+    <>
+      <DropdownContainer>
+        <DropButton onClick={() => setShowData(!showData)}>
+          {selectedValue.displayText}
+        </DropButton>
+      </DropdownContainer>
       {showData && (
         <DropdownDataList>
           {list.map((l) => {
             console.info(":l", l);
             return (
-              <DropButton
-                key={l.id}
-                onClick={handler}
-                value={JSON.stringify(l)}
-              >
-                {l.displayText}
-              </DropButton>
+              <DropdownElement>
+                <DropButton
+                  key={l.id}
+                  onClick={handler}
+                  value={JSON.stringify(l)}
+                >
+                  {l.displayText}
+                </DropButton>
+              </DropdownElement>
             );
           })}
         </DropdownDataList>
       )}
-    </DropdownContainer>
+    </>
   );
 };
 

@@ -5,11 +5,11 @@ export const InputContainer = styled.div`
   width: 100vw;
   height: 100%;
   border: 1px solid ${({ theme }) => theme.color};
-  margin: 0.1rem;
 `;
 
 export const HttpMethodSection = styled.div`
   flex: 2;
+  width: 100%;
   height: 100%;
   border-right: 1px solid ${({ theme }) => theme.color};
 `;
@@ -21,6 +21,8 @@ export const EndpointSection = styled.input`
   outline: none;
   border: none;
   border-right: 1px solid ${({ theme }) => theme.color};
+  width: 100%;
+  height: 100%;
 `;
 
 export const SubmitSection = styled.button`
@@ -32,4 +34,6 @@ export const SubmitSection = styled.button`
   :active {
     opacity: 0.8;
   }
+  width: 100%;
+  height: 100%;
 `;
